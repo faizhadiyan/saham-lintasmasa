@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -161,6 +163,12 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <tr><td><a href="/saham/CTRA.html"><b>CTRA</b></a></td><td>Ciputra Development</td><td>Ciputra Group</td><td class='num'>-</td><td class='num'>Rp540</td><td class='num'>0,00%</td></tr>
 </table></div>
 <p class="note">Klik kode saham untuk detail. Data dari keterbukaan publik.</p></div></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Rantai kepemilikan (2)</span></div>
+<div class="panel"><div class="tblwrap"><table class="tbl">
+<tr><th>Dari</th><th></th><th>Ke</th><th>%</th><th>Keterangan</th></tr>
+<tr><td>Ciputra Group</td><td>→</td><td>PT Sang Pelopor</td><td class='num'>-</td><td class='sub'>Perusahaan pengendali CTRA; ultimate beneficial ownership keluarga Ciputra (keempat individu di bawah adalah pemegang saham PT Sang Pelopor). Sumber: paradapos.com (data BEI per 30 Sep 2025), indopremier/idxchannel.</td></tr><tr><td>PT Sang Pelopor</td><td>→</td><td><a href="/saham/CTRA.html"><b>CTRA</b></a></td><td class='num'>53.31%</td><td class='sub'>9.882.123.998 saham (53,31%); laporan keuangan konsolidasian CTRA 31 Des 2025 (ciputradevelopment.com).</td></tr>
+</table></div>
+<p class="note">Rantai yang sama dengan graph interaktif. <a href="/pemilik/graph/">Lihat graph</a>.</p></div></div>
 </main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -168,4 +176,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947634 -->
+<!-- build:1791949690 -->

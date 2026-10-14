@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -161,6 +163,12 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <tr><td><a href="/saham/PNBN.html"><b>PNBN</b></a></td><td>Bank Panin</td><td>Panin Group</td><td class='num'>-</td><td class='num'>Rp815</td><td class='num'>-1,21%</td></tr><tr><td><a href="/saham/PNLF.html"><b>PNLF</b></a></td><td>Panin Financial</td><td>Panin Group</td><td class='num'>-</td><td class='num'>Rp191</td><td class='num'>0,00%</td></tr><tr><td><a href="/saham/PNIN.html"><b>PNIN</b></a></td><td>Paninvest Tbk</td><td>-</td><td class='num'>-</td><td class='num'>Rp665</td><td class='num'>-1,48%</td></tr>
 </table></div>
 <p class="note">Klik kode saham untuk detail. Data dari keterbukaan publik.</p></div></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Rantai kepemilikan (6)</span></div>
+<div class="panel"><div class="tblwrap"><table class="tbl">
+<tr><th>Dari</th><th></th><th>Ke</th><th>%</th><th>Keterangan</th></tr>
+<tr><td>Panin Group</td><td>→</td><td>PT Panin Investment</td><td class='num'>-</td><td class='sub'>Kendaraan privat keluarga Gunawan (pendiri Panin Group: Mu'min Ali Gunawan). Struktur: Mu'min Ali Gunawan 59,23% + Gunadi Gunawan 38,15% + Tidjan Ananto 1,76% + Muljadi Koesumo 0,86%; sumber: bagan Struktur Pemegang Saham Lap. Tahunan PNIN 2024 (paninvest.co.id)</td></tr><tr><td>Panin Group</td><td>→</td><td><a href="/saham/PNIN.html"><b>PNIN</b></a></td><td class='num'>2.04%</td><td class='sub'>kepemilikan langsung Mu'min Ali Gunawan 83.163.188 saham PNIN (2,04%); sumber: carisaham.com profil PNIN (berdasarkan disclosure BEI)</td></tr><tr><td>PNIN</td><td>→</td><td><a href="/saham/PNLF.html"><b>PNLF</b></a></td><td class='num'>67.86%</td><td class='sub'>PT Paninvest Tbk (BEI: PNIN), holding investasi publik Panin Group; sumber: Catatan 36 lap. keuangan konsolidasi PNLF Q1 2025 (indopremier); bagan AR PNIN 2024 (paninvest.co.id)</td></tr><tr><td>PNLF</td><td>→</td><td><a href="/saham/PNBN.html"><b>PNBN</b></a></td><td class='num'>46.04%</td><td class='sub'>PT Panin Financial Tbk (BEI: PNLF), holding investasi keluarga Gunawan; investasi langsung di PNBN 46,04% (total 46,12% termasuk 0,08% tidak langsung via PT PDL); sumber: bagan AR PNIN 2024; investor.id berdasarkan lap. tahunan PNLF. Mu'min Ali Gunawan adalah ultimate beneficiary (Reuters/Dow Jones)</td></tr><tr><td>PT Panin Investment</td><td>→</td><td>PT Paninkorp</td><td class='num'>99.9%</td><td class='sub'>bagan Struktur Pemegang Saham Lap. Tahunan PNIN 2024 (paninvest.co.id)</td></tr><tr><td>PT Paninkorp</td><td>→</td><td><a href="/saham/PNIN.html"><b>PNIN</b></a></td><td class='num'>29.71%</td><td class='sub'>AR PNIN 2024; disclosure BEI PNIN 31-03-2026 (idx.co.id) mencantumkan Mu'min Ali Gunawan sebagai pemilik/pengendali di balik PT Paninkorp</td></tr>
+</table></div>
+<p class="note">Rantai yang sama dengan graph interaktif. <a href="/pemilik/graph/">Lihat graph</a>.</p></div></div>
 </main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -168,4 +176,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947634 -->
+<!-- build:1791949690 -->

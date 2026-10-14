@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -161,6 +163,12 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <tr><td><a href="/saham/MEDC.html"><b>MEDC</b></a></td><td>Medco Energi Internasional</td><td>Medco Group</td><td class='num'>-</td><td class='num'>Rp1.460</td><td class='num'>+0,34%</td></tr><tr><td><a href="/saham/AMMN.html"><b>AMMN</b></a></td><td>PT Amman Mineral Internasional Tbk.</td><td>-</td><td class='num'>-</td><td class='num'>Rp4.290</td><td class='num'>-0,23%</td></tr>
 </table></div>
 <p class="note">Klik kode saham untuk detail. Data dari keterbukaan publik.</p></div></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Rantai kepemilikan (3)</span></div>
+<div class="panel"><div class="tblwrap"><table class="tbl">
+<tr><th>Dari</th><th></th><th>Ke</th><th>%</th><th>Keterangan</th></tr>
+<tr><td>Medco Group</td><td>→</td><td>PT Medco Daya Abadi Lestari</td><td class='num'>-</td><td class='sub'>Holding pengendali milik keluarga Panigoro; pendiri Arifin Panigoro (wafat Feb 2022), kendali kini Hilmi Panigoro (pintu.co.id; sahamdaily; idnfinancials). Persentase kepemilikan keluarga atas holding ini tidak dipublikasikan = null.</td></tr><tr><td>PT Medco Daya Abadi Lestari</td><td>→</td><td><a href="/saham/MEDC.html"><b>MEDC</b></a></td><td class='num'>51.64%</td><td class='sub'>Pengendali; 12.944.140.124 saham per 31 Des 2024 (lap. tahunan MEDC 2024, idx.co.id). Laporan bulanan Okt 2025: 51,50% (indopremier 6/11/2025).</td></tr><tr><td>PT Medco Daya Abadi Lestari</td><td>→</td><td><a href="/saham/AMMN.html"><b>AMMN</b></a></td><td class='num'>20.92%</td><td class='sub'>Pemegang saham signifikan, BUKAN pengendali; pengendali AMMN = PT Sumber Gemilang Persada 32,17% (afiliasi Salim Group) (idxchannel 2/12/2025). Medco masuk via akuisisi 50% PT Amman Mineral Investama Nov 2016, dikonversi jadi 39,35% saham AMI Jan 2018 (investor.id).</td></tr>
+</table></div>
+<p class="note">Rantai yang sama dengan graph interaktif. <a href="/pemilik/graph/">Lihat graph</a>.</p></div></div>
 </main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -168,4 +176,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947634 -->
+<!-- build:1791949690 -->

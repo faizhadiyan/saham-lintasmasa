@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -185,7 +187,7 @@ function render(){
   var tb=document.getElementById('tb'),h='';
   var lim=Math.min(rows.length,400);
   for(var i=0;i<lim;i++){var t=rows[i];var c=t.cp>0?'up':(t.cp<0?'down':'');
-    h+='<tr><td class="tcode"><a href="'+BP+'/saham/'+t.c+'.html">'+t.c+'</a></td><td>'+t.n+'</td><td>'+t.s+'</td>'
+    h+='<tr class="clickrow" onclick="window.location=''+BP+'/saham/'+t.c+'.html'"><td class="tcode"><a href="'+BP+'/saham/'+t.c+'.html">'+t.c+'</a></td><td>'+t.n+'</td><td>'+t.s+'</td>'
     +'<td class="r num">'+fmtN(t.p)+'</td><td class="r num '+c+'">'+(t.cp==null?'-':(t.cp>0?'+':'')+t.cp.toLocaleString('id-ID',{minimumFractionDigits:2,maximumFractionDigits:2})+'%')+'</td>'
     +'<td class="r num">'+fmtV(t.v)+'</td><td class="r num">'+fmtM(t.vl)+'</td><td class="r num">'+fmtM(t.mc)+'</td>'
     +'<td class="r num">'+fmtN(t.pe,1)+'</td><td class="r num">'+fmtN(t.pb,2)+'</td></tr>'}
@@ -208,4 +210,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947632 -->
+<!-- build:1791949688 -->

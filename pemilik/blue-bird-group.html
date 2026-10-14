@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -161,6 +163,12 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <tr><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td>Blue Bird</td><td>Blue Bird Group</td><td class='num'>-</td><td class='num'>Rp1.555</td><td class='num'>0,00%</td></tr>
 </table></div>
 <p class="note">Klik kode saham untuk detail. Data dari keterbukaan publik.</p></div></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Rantai kepemilikan (10)</span></div>
+<div class="panel"><div class="tblwrap"><table class="tbl">
+<tr><th>Dari</th><th></th><th>Ke</th><th>%</th><th>Keterangan</th></tr>
+<tr><td>Blue Bird Group</td><td>→</td><td>PT Pusaka Citra Djokosoetono</td><td class='num'>-</td><td class='sub'>Kendaraan pengendali BIRD (private); investor.id menyebutnya pengendali. Penerima manfaat akhir BIRD per BEI = keluarga Purnomo Prawiro &amp; Chandra Suharto (CNBC Indonesia, 30 Sep 2025)</td></tr><tr><td>Blue Bird Group</td><td>→</td><td>PT Chandra Investama</td><td class='num'>-</td><td class='sub'>Kendaraan keluarga (private); pct perlu verifikasi</td></tr><tr><td>Blue Bird Group</td><td>→</td><td>Purnomo Prawiro</td><td class='num'>-</td><td class='sub'>Pemegang saham pengendali BIRD (Stockwatch, Jul 2026); keluarga Purnomo Prawiro</td></tr><tr><td>Blue Bird Group</td><td>→</td><td>PT Purnomo Investama</td><td class='num'>-</td><td class='sub'>Kendaraan keluarga Purnomo Prawiro (private); pct perlu verifikasi</td></tr><tr><td>Blue Bird Group</td><td>→</td><td>Purnomo Endang Investama</td><td class='num'>-</td><td class='sub'>Kendaraan keluarga (private); pct perlu verifikasi</td></tr><tr><td>Purnomo Endang Investama</td><td>→</td><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td class='num'>1.31%</td><td class='sub'>DPS per 27 Feb 2026 (KSEI via investor.id)</td></tr><tr><td>PT Purnomo Investama</td><td>→</td><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td class='num'>1.85%</td><td class='sub'>DPS per 27 Feb 2026 (KSEI via investor.id)</td></tr><tr><td>Purnomo Prawiro</td><td>→</td><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td class='num'>14.18%</td><td class='sub'>Beli 52,56 jt saham @Rp1.490 tgl 15 Jun 2026; kepemilikan 12,08%-&gt;14,18% (Stockwatch/iqplus, Jul 2026)</td></tr><tr><td>PT Chandra Investama</td><td>→</td><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td class='num'>6.28%</td><td class='sub'>Beli 39,2 jt saham @Rp1.500 tgl 23 Jul 2026; kepemilikan 4,71%-&gt;6,28% (investor.id, 28 Jul 2026)</td></tr><tr><td>PT Pusaka Citra Djokosoetono</td><td>→</td><td><a href="/saham/BIRD.html"><b>BIRD</b></a></td><td class='num'>18.97%</td><td class='sub'>Jual 78,4 jt saham @Rp1.500 tgl 23 Jul 2026; kepemilikan 22,1%-&gt;18,97% (investor.id, 28 Jul 2026)</td></tr>
+</table></div>
+<p class="note">Rantai yang sama dengan graph interaktif. <a href="/pemilik/graph/">Lihat graph</a>.</p></div></div>
 </main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -168,4 +176,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947634 -->
+<!-- build:1791949690 -->

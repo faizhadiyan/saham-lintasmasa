@@ -66,6 +66,8 @@ td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
 .tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+tr.clickrow{cursor:pointer}
+tr.clickrow:hover td{background:rgba(128,128,128,.08)}
 /* toggle grafik/tabel */
 .tglwrap{margin-left:auto;display:flex;gap:6px}
 .tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
@@ -161,6 +163,12 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <tr><td><a href="/saham/EMTK.html"><b>EMTK</b></a></td><td>Elang Mahkota Teknologi</td><td>Emtek Group</td><td class='num'>-</td><td class='num'>Rp378</td><td class='num'>+3,28%</td></tr><tr><td><a href="/saham/SCMA.html"><b>SCMA</b></a></td><td>Surya Citra Media</td><td>PT Elang Mahkota Teknologi Tbk</td><td class='num'>-</td><td class='num'>Rp176</td><td class='num'>-0,56%</td></tr><tr><td><a href="/saham/BUKA.html"><b>BUKA</b></a></td><td>Bukalapak</td><td>Emtek Group (investor)</td><td class='num'>-</td><td class='num'>Rp100</td><td class='num'>+1,01%</td></tr>
 </table></div>
 <p class="note">Klik kode saham untuk detail. Data dari keterbukaan publik.</p></div></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Rantai kepemilikan (5)</span></div>
+<div class="panel"><div class="tblwrap"><table class="tbl">
+<tr><th>Dari</th><th></th><th>Ke</th><th>%</th><th>Keterangan</th></tr>
+<tr><td>Emtek Group</td><td>→</td><td><a href="/saham/EMTK.html"><b>EMTK</b></a></td><td class='num'>-</td><td class='sub'>EMTK adalah perusahaan induk Emtek Group; Eddy Kusnadi Sariaatmadja pendiri &amp; pengendali EMTK (21,97% langsung per lapkeu 31 Des 2025); penerima manfaat akhir EMTK = Eddy K. Sariaatmadja (sumber: laporan tahunan EMTK 2025 via cms.emtek.co.id; IDNFinancials)</td></tr><tr><td>EMTK</td><td>→</td><td><a href="/saham/SCMA.html"><b>SCMA</b></a></td><td class='num'>67.2%</td><td class='sub'>kepemilikan langsung EMTK atas SCMA 67,2% (49,71 miliar saham) per akhir Sep 2025; EMTK pengendali SCMA (sumber: keterbukaan BEI, via investortrust.id 30/9/2025)</td></tr><tr><td>EMTK</td><td>→</td><td>PT Kreatif Media Karya</td><td class='num'>100.0%</td><td class='sub'>KMK adalah anak usaha digital EMTK (lengan investasi startup); dimiliki 100% per lapkeu EMTK 31 Mar 2026 (sumber: id.wikipedia.org/wiki/Elang_Mahkota_Teknologi; IDNFinancials 23/2/2026)</td></tr><tr><td>EMTK</td><td>→</td><td><a href="/saham/BUKA.html"><b>BUKA</b></a></td><td class='num'>10.67%</td><td class='sub'>kepemilikan langsung EMTK atas BUKA 10,67% (11,01 miliar saham) per 30 Sep 2026 (sumber: laporan registrasi pemegang efek BUKA, via Kontan); total grup Emtek ~56,35% (KMK + langsung)</td></tr><tr><td>PT Kreatif Media Karya</td><td>→</td><td><a href="/saham/BUKA.html"><b>BUKA</b></a></td><td class='num'>45.678%</td><td class='sub'>KMK pemegang saham terbesar/pengendali BUKA; 45,678% per 30 Sep 2026 (sumber: laporan bulanan registrasi pemegang efek BUKA di BEI, via Kontan)</td></tr>
+</table></div>
+<p class="note">Rantai yang sama dengan graph interaktif. <a href="/pemilik/graph/">Lihat graph</a>.</p></div></div>
 </main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -168,4 +176,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791947634 -->
+<!-- build:1791949690 -->
