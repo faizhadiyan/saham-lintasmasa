@@ -64,7 +64,12 @@ tbody tr:hover{background:#F5EFE1}
 td.r,th.r{text-align:right}
 td.c,th.c{text-align:center}
 .tcode{font-family:var(--mono);font-weight:700}
+.tcode a{color:var(--red);text-decoration:none;cursor:pointer}
 .tcode a:hover{color:var(--red);text-decoration:underline}
+/* toggle grafik/tabel */
+.tglwrap{margin-left:auto;display:flex;gap:6px}
+.tglbtn{border:1px solid var(--muted);background:transparent;color:var(--muted);border-radius:8px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:var(--sans)}
+.tglbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:700}
 /* grid */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 @media(max-width:820px){.grid2{grid-template-columns:1fr}}
@@ -153,9 +158,13 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 <span class="badge up">+0,88%</span></div>
 <p class="lede">Penutupan 2026-10-13. Perubahan 1 poin dari Rp114.</p>
 
-<div class="sec"><div class="sec-head"><span class="sec-no">01</span><span class="sec-title">Grafik harga</span></div>
+<div class="sec"><div class="sec-head"><span class="sec-no">01</span><span class="sec-title">Grafik harga</span>
+<span class="tglwrap"><button type="button" class="tglbtn on" id="b-grafik">Grafik</button><button type="button" class="tglbtn" id="b-tabel">Tabel</button></span></div>
 <div class="panel"><div id="c-d" class="chart tall"></div>
-<p class="note">Candlestick harian 1 tahun + MA20/MA50. Data Yahoo Finance (tertunda).</p></div></div>
+<div id="t-d" style="display:none"><div class="tblwrap" style="max-height:480px;overflow:auto"><table>
+<thead><tr><th>Tanggal</th><th class="r">Open</th><th class="r">High</th><th class="r">Low</th><th class="r">Close</th><th class="r">Volume</th></tr></thead>
+<tbody id="t-d-body"></tbody></table></div></div>
+<p class="note">Candlestick harian 1 tahun + MA20/MA50. Mode tabel menampilkan data harian yang sama. Data Yahoo Finance (tertunda).</p></div></div>
 
 <div class="sec"><div class="sec-head"><span class="sec-no">02</span><span class="sec-title">Statistik</span></div>
 <div class="stats"><div><div class='lab'>OPEN</div><div class='val '>114</div></div><div><div class='lab'>HIGH</div><div class='val '>117</div></div><div><div class='lab'>LOW</div><div class='val '>111</div></div><div><div class='lab'>PREV CLOSE</div><div class='val '>114</div></div><div><div class='lab'>VOLUME</div><div class='val '>9,2 jt</div></div><div><div class='lab'>VALUE</div><div class='val '>Rp1,1 M</div></div><div><div class='lab'>MCAP</div><div class='val '>Rp2,1 T</div></div><div><div class='lab'>PER</div><div class='val '>273,8</div></div><div><div class='lab'>PBV</div><div class='val '>-</div></div><div><div class='lab'>EPS</div><div class='val '>0</div></div><div><div class='lab'>DIV YIELD</div><div class='val '>14,00%</div></div><div><div class='lab'>52W HIGH</div><div class='val '>390</div></div><div><div class='lab'>52W LOW</div><div class='val '>86</div></div><div><div class='lab'>ROE</div><div class='val '>0,4%</div></div><div><div class='lab'>ROA</div><div class='val '>1,6%</div></div><div><div class='lab'>DER</div><div class='val '>72,0x</div></div><div><div class='lab'>NPM</div><div class='val '>0,3%</div></div><div><div class='lab'>CURRENT RATIO</div><div class='val '>1,11x</div></div><div><div class='lab'>REV GROWTH</div><div class='val '>+12,90%</div></div><div><div class='lab'>BETA</div><div class='val '>0,84</div></div></div></div>
@@ -195,6 +204,18 @@ var H=[{"d": "2025-10-13", "o": 116.0, "h": 133.0, "l": 113.0, "c": 125.0, "v": 
       {name:'MA50',type:'line',data:ma(50),showSymbol:false,lineStyle:{width:1.5,color:'#2B5FA6'}}
     ]});
   window.addEventListener('resize',function(){ch.resize()});
+  (function(){var tb=document.getElementById('t-d-body');var rows='';
+  for(var i=H.length-1;i>=0;i--){var x=H[i];
+    rows+='<tr><td>'+x.d+'</td><td class="r num">'+x.o.toLocaleString('id-ID')+'</td><td class="r num">'+x.h.toLocaleString('id-ID')+'</td><td class="r num">'+x.l.toLocaleString('id-ID')+'</td><td class="r num">'+x.c.toLocaleString('id-ID')+'</td><td class="r num">'+x.v.toLocaleString('id-ID')+'</td></tr>';}
+  tb.innerHTML=rows||'<tr><td colspan="6">Data historis tidak tersedia.</td></tr>';
+  var bg=document.getElementById('b-grafik'),bt=document.getElementById('b-tabel');
+  function setm(m){var g=m==='g';
+    document.getElementById('c-d').style.display=g?'':'none';
+    document.getElementById('t-d').style.display=g?'none':'';
+    bg.classList.toggle('on',g);bt.classList.toggle('on',!g);
+    if(g){ch.resize();}}
+  bg.onclick=function(){setm('g')};bt.onclick=function(){setm('t')};
+  })();
 </script></main>
 <footer><div class="wrap">
 <b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
@@ -202,4 +223,4 @@ Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap ha
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791940907 -->
+<!-- build:1791944701 -->
