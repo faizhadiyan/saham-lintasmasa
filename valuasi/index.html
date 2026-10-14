@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Valuasi Pasar — Lintasmasa Saham</title>
+<title>Valuasi Pasar | Lintasmasa Saham</title>
 <meta name="description" content="Dashboard valuasi pasar saham Indonesia: tren PER 10 tahun, divergensi laba vs harga, perbandingan regional.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script><style>
 :root{
@@ -142,7 +142,7 @@ footer b{color:var(--ink)}
 <div class="nav-links"><a href="/" class="">Pasar</a><a href="/saham/" class="">Screener</a><a href="/peta/" class="">Peta</a><a href="/picks/" class="">Picks</a><a href="/pemilik/" class="">Pemilik</a><a href="/indeks/" class="">Indeks</a><a href="/valuasi/" class="active">Valuasi</a><a href="/tentang/" class="">Tentang</a></div>
 <button class="theme-btn" aria-label="Ganti tema" onclick="toggleTheme()">◐</button>
 <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')"><span></span><span></span><span></span></button>
-<span class="nav-date">Data 2026-10-13</span>
+<span class="nav-date">Data 2026-10-14</span>
 </div></nav>
 <script>
 (function(){var t=localStorage.getItem('lm-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
@@ -153,9 +153,9 @@ var _DARK=document.documentElement.getAttribute('data-theme')==='dark';
 var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342A':'#E3DCCB', CRI=_DARK?'rgba(240,234,217,0.06)':'rgba(22,19,14,0.05)';
 </script>
 <main class="wrap">
-<div class="kicker">VALUASI PASAR — PER AGREGAT</div>
+<div class="kicker">VALUASI PASAR: PER AGREGAT</div>
 <h1>Pasar lagi murah. 10,8x.</h1>
-<p class="lede">IHSG diperdagangkan di PER <b>10,84x</b> (estimasi Bloomberg, 17 Sep 2026) —
+<p class="lede">IHSG diperdagangkan di PER <b>10,84x</b> (estimasi Bloomberg, 17 Sep 2026).
 <b>24% di bawah</b> rata-rata 10 tahunnya yang <b>14,25x</b>. Terakhir semurah ini: April 2020, waktu COVID.</p>
 
 <div class="sec"><div class="sec-head"><span class="sec-no">01</span><span class="sec-title">Dari 30x ke 10x dalam satu dekade</span></div>
@@ -170,7 +170,7 @@ var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342
 
 <div class="sec"><div class="sec-head"><span class="sec-no">03</span><span class="sec-title">Termurah ketiga di Asia. Tapi ada alasannya.</span></div>
 <div class="panel"><div id="c-reg" class="chart tall"></div>
-<p class="note">Estimasi Bloomberg, 17 Sep 2026. PEG ratio IHSG 2,5x — murah secara PER, tapi pertumbuhan laba kalah kompetitif.</p></div></div>
+<p class="note">Estimasi Bloomberg, 17 Sep 2026. PEG ratio IHSG 2,5x, murah secara PER, tapi pertumbuhan laba kalah kompetitif.</p></div></div>
 
 <div class="sec"><div class="sec-head"><span class="sec-no">04</span><span class="sec-title">2026: tahun kapok</span></div>
 <div class="strip">
@@ -185,13 +185,13 @@ kelas MSCI, rupiah Rp17.899/USD, ekspektasi kenaikan suku bunga The Fed, Brent d
 <div class="sec"><div class="sec-head"><span class="sec-no">05</span><span class="sec-title">Jangan telan angka ini mentah-mentah</span></div>
 <div class="cards">
 <div class="mcard"><h4>PER pasar itu cap-weighted</h4><p>Total market cap ÷ total laba. BBCA dkk paling berpengaruh. <b>Bukan</b> rata-rata PER tiap saham.</p></div>
-<div class="mcard"><h4>Metode beda, angka beda</h4><p>PER 12,7x (OJK) dan 9x (hitungan lain) bisa sama-sama benar — tergantung emiten rugi diikutkan atau tidak.</p></div>
+<div class="mcard"><h4>Metode beda, angka beda</h4><p>PER 12,7x (OJK) dan 9x (hitungan lain) bisa sama-sama benar, tergantung emiten rugi diikutkan atau tidak.</p></div>
 <div class="mcard"><h4>IDX bukan ekonomi Indonesia</h4><p>Isinya korporasi besar formal. UMKM dan sektor informal tidak tercatat di sini.</p></div>
 <div class="mcard"><h4>Harga = ekspektasi</h4><p>PER rendah bisa berarti murah, bisa juga berarti pasar meragukan prospek. Cek PEG-nya: 2,5x.</p></div>
 </div></div>
 
 <script>
-var A=[{"d": "2016-07", "v": 30.44, "n": "Rekor 10 tahun", "s": "Stockbit"}, {"d": "2017-03", "v": 23.24, "n": "", "s": "Stockbit"}, {"d": "2018-06", "v": 25.89, "n": "", "s": "Stockbit"}, {"d": "2018-11", "v": 18.45, "n": "", "s": "Stockbit"}, {"d": "2019-12", "v": 22.02, "n": "", "s": "Stockbit"}, {"d": "2020-02", "v": 18.22, "n": "", "s": "Stockbit"}, {"d": "2020-04", "v": 11.5, "n": "<12x \u2014 termurah 10 tahun", "s": "Bareksa/Syailendra"}, {"d": "2020-12", "v": 24.0, "n": "Laba anjlok COVID (23\u201325x)", "s": "Infodagang"}, {"d": "2024-10", "v": 12.5, "n": "", "s": "Ciptadana"}, {"d": "2024-12", "v": 12.71, "n": "", "s": "OJK"}, {"d": "2025-02", "v": 11.95, "n": "", "s": "Bloomberg est."}, {"d": "2025-11", "v": 12.83, "n": "IHSG 8.508", "s": "Bareksa"}, {"d": "2026-02", "v": 15.68, "n": "", "s": "IDX/CEIC"}, {"d": "2026-05", "v": 16.8, "n": "", "s": "Sinarmas"}, {"d": "2026-09", "v": 10.84, "n": "Crash 2026", "s": "Bloomberg est."}];
+var A=[{"d": "2016-07", "v": 30.44, "n": "Rekor 10 tahun", "s": "Stockbit"}, {"d": "2017-03", "v": 23.24, "n": "", "s": "Stockbit"}, {"d": "2018-06", "v": 25.89, "n": "", "s": "Stockbit"}, {"d": "2018-11", "v": 18.45, "n": "", "s": "Stockbit"}, {"d": "2019-12", "v": 22.02, "n": "", "s": "Stockbit"}, {"d": "2020-02", "v": 18.22, "n": "", "s": "Stockbit"}, {"d": "2020-04", "v": 11.5, "n": "<12x, termurah 10 tahun", "s": "Bareksa/Syailendra"}, {"d": "2020-12", "v": 24.0, "n": "Laba anjlok COVID (23\u201325x)", "s": "Infodagang"}, {"d": "2024-10", "v": 12.5, "n": "", "s": "Ciptadana"}, {"d": "2024-12", "v": 12.71, "n": "", "s": "OJK"}, {"d": "2025-02", "v": 11.95, "n": "", "s": "Bloomberg est."}, {"d": "2025-11", "v": 12.83, "n": "IHSG 8.508", "s": "Bareksa"}, {"d": "2026-02", "v": 15.68, "n": "", "s": "IDX/CEIC"}, {"d": "2026-05", "v": 16.8, "n": "", "s": "Sinarmas"}, {"d": "2026-09", "v": 10.84, "n": "Crash 2026", "s": "Bloomberg est."}];
 var ch1=echarts.init(document.getElementById('c-per'));
 ch1.setOption({backgroundColor:'transparent',
  tooltip:{trigger:'item',formatter:function(p){var a=A[p.dataIndex];return a.d+'<br/>PER: <b>'+a.v+'x</b>'+(a.n?'<br/>'+a.n:'')+'<br/><span style="color:'+CC+'">'+a.s+'</span>'}},
@@ -230,9 +230,9 @@ ch3.setOption({backgroundColor:'transparent',
 window.addEventListener('resize',function(){ch1.resize();ch2.resize();ch3.resize()});
 </script></main>
 <footer><div class="wrap">
-<b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
+<b>Lintasmasa Saham</b>, potret harian pasar saham Indonesia.<br>
 Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap hari setelah pasar tutup (16.15 WIB).<br>
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791949690 -->
+<!-- build:1791975073 -->

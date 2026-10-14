@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Screener Saham — Lintasmasa Saham</title>
+<title>Screener Saham | Lintasmasa Saham</title>
 <meta name="description" content="Screener seluruh saham IDX: harga, PER, PBV, market cap.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script><style>
 :root{
@@ -142,7 +142,7 @@ footer b{color:var(--ink)}
 <div class="nav-links"><a href="/" class="">Pasar</a><a href="/saham/" class="active">Screener</a><a href="/peta/" class="">Peta</a><a href="/picks/" class="">Picks</a><a href="/pemilik/" class="">Pemilik</a><a href="/indeks/" class="">Indeks</a><a href="/valuasi/" class="">Valuasi</a><a href="/tentang/" class="">Tentang</a></div>
 <button class="theme-btn" aria-label="Ganti tema" onclick="toggleTheme()">◐</button>
 <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav').classList.toggle('open')"><span></span><span></span><span></span></button>
-<span class="nav-date">Data 2026-10-13</span>
+<span class="nav-date">Data 2026-10-14</span>
 </div></nav>
 <script>
 (function(){var t=localStorage.getItem('lm-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
@@ -153,7 +153,7 @@ var _DARK=document.documentElement.getAttribute('data-theme')==='dark';
 var CC=_DARK?'#A39B88':'#6E675C', CI=_DARK?'#F0EAD9':'#16130E', CH=_DARK?'#3A342A':'#E3DCCB', CRI=_DARK?'rgba(240,234,217,0.06)':'rgba(22,19,14,0.05)';
 </script>
 <main class="wrap">
-<div class="kicker">SCREENER — 921 EMITEN</div>
+<div class="kicker">SCREENER: 921 EMITEN</div>
 <h1>Semua saham, satu tabel.</h1>
 <p class="lede">Cari berdasarkan kode atau nama, saring per sektor, klik header kolom untuk mengurutkan.
 Klik kode saham untuk membuka halaman detail.</p>
@@ -205,9 +205,9 @@ var _lets='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 Promise.all(_lets.map(function(L){return fetch(BP+'/data/screener/'+L+'.json').then(function(r){return r.json()}).catch(function(){return []})})).then(function(ch){ch.forEach(function(c){D=D.concat(c)});initScreen()});
 </script></main>
 <footer><div class="wrap">
-<b>Lintasmasa Saham</b> — potret harian pasar saham Indonesia.<br>
+<b>Lintasmasa Saham</b>, potret harian pasar saham Indonesia.<br>
 Data harga: Yahoo Finance (tertunda). Universe emiten: Wikipedia. Update tiap hari setelah pasar tutup (16.15 WIB).<br>
 Bukan rekomendasi investasi. Keputusan investasi tanggung jawab masing-masing.
 </div></footer>
 </body></html>
-<!-- build:1791949688 -->
+<!-- build:1791975072 -->
